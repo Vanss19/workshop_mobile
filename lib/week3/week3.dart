@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:workshop_mobile/week3/part1/part1.dart';
+import 'package:workshop_mobile/week3/part2/part2.dart';
 
 class Week3 extends StatefulWidget {
   const Week3({Key? key}) : super(key: key);
@@ -36,6 +37,15 @@ class _Week3State extends State<Week3> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const Part1()),
+                );
+              },
+            ),
+            ElevatedButton(
+              child: const Text('Part 2'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Part2()),
                 );
               },
             ),

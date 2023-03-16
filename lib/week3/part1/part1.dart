@@ -15,17 +15,6 @@ class Part1 extends StatefulWidget {
 }
 
 class _Part1State extends State<Part1> {
-  int _counter = 1;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-      if(_counter>10) {
-        _counter = 1;
-      }
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
