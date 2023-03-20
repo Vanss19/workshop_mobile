@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:workshop_mobile/week3/week3.dart';
+import 'package:workshop_mobile/week4/week4.dart';
 
 void main() {
   runApp(const MyApp());
@@ -47,6 +48,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const Week3()),
+                );
+              },
+            ),
+            ElevatedButton(
+              child: const Text('Minggu 4'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Week4()),
                 );
               },
             ),
