@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:workshop_mobile/week4/percobaan1/percobaan1.dart';
+import 'package:workshop_mobile/week4/percobaan2/app.dart';
+import 'package:workshop_mobile/week4/tugas/tugas.dart';
 
 class Week4 extends StatefulWidget {
   const Week4({Key? key}) : super(key: key);
@@ -25,6 +27,24 @@ class _Week4State extends State<Week4> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => PercobaanSatu()),
+                );
+              },
+            ),
+            ElevatedButton(
+              child: const Text('Percobaan 2'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => App()),
+                );
+              },
+            ),
+            ElevatedButton(
+              child: const Text('Tugas'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Tugas()),
                 );
               },
             ),
