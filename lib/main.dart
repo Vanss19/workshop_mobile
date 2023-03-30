@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:workshop_mobile/week3/week3.dart';
 import 'package:workshop_mobile/week4/week4.dart';
+import 'package:workshop_mobile/week5/week5.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Workshop Mobile',
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -57,6 +59,15 @@ class _MyHomePageState extends State<MyHomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) => const Week4()),
+                );
+              },
+            ),
+            ElevatedButton(
+              child: const Text('Minggu 5'),
+              onPressed: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const Week5()),
                 );
               },
             ),
